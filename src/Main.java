@@ -35,7 +35,7 @@ public class Main {
                 break;
 
             case "2":
-                System.out.println("Ingrese un numero ");
+                System.out.println("Ingrese un numerito ");
                 Long numL = sc.nextLong();
                 System.out.println(numL );
                 //si se ingresa una numero de tamaño mayor a long nos arroja un error de tipo ; "java.util.InputMismatchException"
