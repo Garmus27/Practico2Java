@@ -1,5 +1,8 @@
 package MainProyect;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class Funciones {
 
     public void contar(double monto) {
@@ -28,13 +31,43 @@ public class Funciones {
             }else{
                 break;
             }
+        }
+    }
+
+    public int sumatoriaRecursiva (int num){
+
+        if (num==1){
+            return 1;
+        }else {
+            return num + sumatoriaRecursiva(num-1);
+        }
+    }
+
+    public int sumatoriaDigitos (int num) {
+        if (num==0){
+            return 0;
+        }else {
+            return  sumatoriaDigitos(num/10)+num%10;
+        }
+
+    }
+
+    public String cadenaInversa (String cadena){
+
+        ;
+
+        if (cadena.length() == 8){
 
 
+        }else{
+
+            cadena.concat(String.valueOf(cadena.charAt(cadena.length()-1)));
+            System.out.println(cadena.charAt(cadena.length()-1));
+
+            return cadena.concat();
 
         }
 
 
-
     }
-
 }

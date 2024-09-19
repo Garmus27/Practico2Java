@@ -5,13 +5,13 @@ import java.util.Date;
 import java.util.Scanner;
 
 
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        Funciones funciones = new Funciones();
 
         String msj = JOptionPane.showInputDialog(null, "Bienevenido ingrese un numero del 1 al 23  para seleccionar que ejercicio deseado");
 
@@ -69,9 +69,6 @@ public class Main {
             case "4":
                 System.out.println("Ingrese un monto: ");
                 double monto = sc.nextDouble();
-
-                Funciones funciones = new Funciones();
-
                 funciones.contar(monto);
 
             case "5":
@@ -201,11 +198,11 @@ public class Main {
                 int num1 = Integer.parseInt(sc.next());
                 int num2 = Integer.parseInt(sc.next());
                 OperacionMatematica om = new OperacionMatematica();
-            case "20"
+            case "20":
 
-            Fraccion f1 = new Fraccion();
-            Fraccion f2 = new Fraccion();
-            Fraccion f3 = new Fraccion();
+                Fraccion f1 = new Fraccion();
+                Fraccion f2 = new Fraccion();
+                Fraccion f3 = new Fraccion();
 
                 f1.setNumerador(2);
                 f1.setDenominador(5);
@@ -216,36 +213,26 @@ public class Main {
                 f3.sumarFraccion(f1, f2);
                 System.out.println(f3);
 
+            case "21":
 
+                System.out.println("ingrese un numero");
+                int nmbr = Integer.parseInt(sc.next());
+                int suma21 = funciones.sumatoriaRecursiva(nmbr);
+                System.out.println(suma21);
+            case "22":
 
+                System.out.println("ingrese un numero de no mas de 4 cifras");
+                int nmbr2 = Integer.parseInt(sc.next());
 
+                System.out.println(funciones.sumatoriaDigitos(nmbr2));
 
+            case "23":
 
+                System.out.println("ingrese una cadena de texto");
 
+                String cad = sc.next();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                System.out.println(funciones.cadenaInversa(cad));
 
 
 
