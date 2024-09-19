@@ -28,7 +28,7 @@ public class Main {
 
                 //*long numLong=(long) num;*//*
                 Long numLong = num.longValue();
-                String numString = String.format("%.4f", num);//* Con este casteo podemos legir la cantidad de decimales que admitiremos para ser expresado como cadena*//*
+                String numString = String.format("%.4f", num);//* Con este casteo podemos elegir la cantidad de decimales que admitiremos para ser expresado como cadena*//*
                 Short numShort = num.shortValue();
                 float numFloat = num.floatValue();
 
@@ -44,7 +44,7 @@ public class Main {
                 Long numL = sc.nextLong();
                 System.out.println(numL);
                 //si se ingresa una numero de tamaño mayor a long nos arroja un error de tipo ; "java.util.InputMismatchException"
-                // se podria solucionar haciendo una verificacion con while o previamente casteando el resultado siempre y cuando tomar un valor mas grande del especificado no interfiera con el correcto compartamiento del programa
+                // se podria solucionar haciendo una verificacion con while o previamente casteando el resultado siempre y cuan00do tomar un valor mas grande del especificado no interfiera con el correcto compartamiento del programa
                 break;
 
             case "3":
@@ -79,7 +79,7 @@ public class Main {
                 System.out.println(nString);
 
             case "6":
-                System.out.println("Ingrese una palabra o frase cuaqluiera");
+                System.out.println("Ingrese una palabra o frase cualquiera");
                 String frase = sc.next();
                 int longFrase = frase.length();
                 System.out.println("la longitud de la frase es " + longFrase);
@@ -132,7 +132,7 @@ public class Main {
 
                     }
 
-                } while (out == false);
+                } while (!out);
             case "11":
                 System.out.println("ingrese dos palabras");
                 String word1 = sc.next();
